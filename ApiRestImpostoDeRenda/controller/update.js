@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Preencha o modal com os dados da pessoa
         modalContent.innerHTML = `
-            <h2>Editar Pessoa</h2>
+            <h1>Editar Pessoa</h1>
+            <form>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" value="${pessoaToEdit.nome}">
             <label for="cpf">CPF:</label>
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <label for "renda">Renda:</label>
             <input type="text" id="renda" value="${pessoaToEdit.renda}">
             <button id="saveChanges">Salvar Alterações</button>
+            </form>
         `;
 
         // Exiba o modal
