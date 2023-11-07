@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
             pessoaToEdit.renda = updatedRenda;
         
             // Faça a solicitação para atualizar os dados no backend
-            var url = "http://localhost/pw/ApiRestImpostoDeRenda/controller/index.php"; // Substitua pela URL correta
+            var url = "http://localhost/APIREST-ImpostodeRenda/ApiRestImpostoDeRenda/controller/index.php"; // Substitua pela URL correta
             fetch(url, {
                 method: 'PUT', // Use PUT para atualizar os dados
                 headers: {
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (JSON.stringify(response.status) == "200") {
                     console.log(JSON.stringify(response))
                    alert("Dados atualizados com sucesso");
-                    window.location.href = "http://localhost/pw/ApiRestImpostoDeRenda/view/listagem.php";
+                    window.location.href = "http://localhost/APIREST-ImpostodeRenda/ApiRestImpostoDeRenda/view/listagem.php";
 
                 } else {
                     alert("Falha ao atualizar os dados");

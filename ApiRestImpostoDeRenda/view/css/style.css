@@ -2,30 +2,31 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #27083b;
     margin: 0;
     padding: 0;
 }
 
 h1 {
     text-align: center;
-    background-color: #4CAF50;
+    background-color: #562263;
     color: white;
     padding: 20px;
     margin: 0;
 }
 
 form {
-    width: 80%;
+    width: 30%;
     margin: 0 auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: rgb(142, 102, 175);
+    padding: 35px;
+    border-radius: 40px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    margin-top: 140px;
 }
 
 label, input {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: block;
 }
 
@@ -38,23 +39,24 @@ input[type="text"], input[type="number"] {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #701670;
     color: white;
     padding: 15px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #8d18c4;
 }
 
 #result {
     margin-top: 20px;
     padding: 20px;
-    background-color: #eee;
+    background-color: rgba(238, 238, 238, 0);
+    color: aliceblue;
     border-radius: 5px;
 }
 

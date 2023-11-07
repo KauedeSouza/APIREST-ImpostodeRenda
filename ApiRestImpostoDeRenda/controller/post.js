@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
             };
 
             // Fazer a solicitação POST para a API
-            fetch("http://localhost/pw/ApiRestImpostoDeRenda/controller/index.php", {
+            fetch("http://localhost/APIREST-ImpostodeRenda/ApiRestImpostoDeRenda/controller/index.php", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 JSON.stringify(response.status)
                 if(JSON.stringify(response.status) == "200"){
                    alert(JSON.stringify(response.message)) 
-                     window.location.href = "http://localhost/pw/ApiRestImpostoDeRenda/view/listagem.php";
+                     window.location.href = "http://localhost/APIREST-ImpostodeRenda/ApiRestImpostoDeRenda/view/listagem.php";
                 }
                
             })

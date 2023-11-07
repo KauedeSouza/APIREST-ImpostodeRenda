@@ -1,4 +1,4 @@
-var deleteUrl = "http://localhost/pw/ApiRestImpostoDeRenda/controller/index.php"; 
+var deleteUrl = "http://localhost/APIREST-ImpostodeRenda/ApiRestImpostoDeRenda/controller/index.php"; 
 
 var pessoaToDelete = JSON.parse(localStorage.getItem('pessoaToDelete'));
 console.log(pessoaToDelete.id)
@@ -14,11 +14,11 @@ fetch(deleteUrl, {
     if (JSON.stringify(response.status) == "200") {
         console.log(JSON.stringify(response))
        alert("Dados Excluidos com sucesso");
-        window.location.href = "http://localhost/pw/ApiRestImpostoDeRenda/view/listagem.php";
+        window.location.href = "http://localhost/APIREST-ImpostodeRenda/ApiRestImpostoDeRenda/view/listagem.php";
 
     } else {
         alert("Falha ao atualizar os dados");
-        window.location.href = "http://localhost/pw/ApiRestImpostoDeRenda/view/listagem.php";
+        window.location.href = "http://localhost/APIREST-ImpostodeRenda/ApiRestImpostoDeRenda/view/listagem.php";
 
     }
 })
